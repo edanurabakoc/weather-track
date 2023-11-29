@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weather-track/static/css/main.b9107120.css",
+    "main.js": "/weather-track/static/js/main.864b4a48.js",
+    "index.html": "/weather-track/index.html",
+    "main.b9107120.css.map": "/weather-track/static/css/main.b9107120.css.map",
+    "main.864b4a48.js.map": "/weather-track/static/js/main.864b4a48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9107120.css",
+    "static/js/main.864b4a48.js"
+  ]
+}
