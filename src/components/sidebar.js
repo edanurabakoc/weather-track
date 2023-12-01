@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Sidebar({ setCity, search, city, isActiveCategory, setIsActiveCategory, menuCities, lastSearchedCities }) {
     return (
-        <div className="sidebar w-1/4 max-sm:w-2/5 bg-[#9467a196] border-r border-gray-300 overflow-y-auto max-sm:pt-3.5 max-sm:text-center">
+        <div className="sidebar w-1/4 max-sm:w-2/5 bg-[#39878bbf] border-r border-gray-300 overflow-y-auto max-sm:pt-3.5 max-sm:text-center">
             <div className="p-4 flex-col gap-4 flex max-sm:p-0 ">
                 <div className="text-lg font-semibold flex justify-center items-center">
                     <div className="relative">
