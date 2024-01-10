@@ -73,7 +73,7 @@ function useWeather() {
 
         setIsSearching(true);
 
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=99271c9d611a42f68d8153241233010&q=${menuCity ?? city}&days=7&aqi=no
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=99271c9d611a42f68d8153241233010&q=${menuCity ?? city}&days=7&aqi=no
     `)
             .then((response) => response.json())
             .then((data) => {
