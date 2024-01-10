@@ -3,8 +3,8 @@ export default function Daily({ isActiveCategory, isSearched, isNotFound, isSear
         <>
             {
                 (isActiveCategory == 'daily' && isSearched && isNotFound == false && isSearching == false) && (
-                    <div className="daily main bg-[#652c7e] w-[75%] p-4 flex flex-row gap-5 max-sm:flex-col">
-                        <div className="flex flex-col gap-3">
+                    <div className="daily main bg-[#652c7e] flex-1 p-4 flex flex-row gap-5 max-sm:flex-col">
+                        <div className="flex flex-1 flex-col gap-3">
                             {sevenDays.map((day, index) => (
                                 <div key={index} className="border-solid rounded-md px-4 justify-between flex bg-[#be8ccb8c]">
                                     <div className='flex flex-col self-center'>
@@ -19,7 +19,7 @@ export default function Daily({ isActiveCategory, isSearched, isNotFound, isSear
                             ))}
                         </div>
 
-                        <div className="flex flex-col gap-5">
+                        <div className=" flex flex-1 flex-col gap-5">
                             <div style={{ backgroundImage: `url(./img/${todayHeaderImage}.png)` }} className='daily-summary-header h-[50%] rounded-md px-4 bg-cover'>
                                 <div className='flex flex-row justify-between'>
                                     <div className='flex flex-col'>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 
-export default function Today({ isActiveCategory, isSearched, isNotFound, isSearching, icon, moonset, uvIndex, humidity, moonrise, pressure, windSpeed, deg, minutesAgo, formattedTime, formattedDate, todayHeaderImage }) {
+export default function Today({ isActiveCategory, isSearched, isNotFound, isSearching, icon, moonset, uvIndex, humidity, moonrise, pressure, windSpeed, deg, minutesAgo, formattedTime, formattedDate, todayHeaderImage, isSidebarOpen, setIsSidebarOpen }) {
     return (
         <>
             {(isActiveCategory == 'today' && isSearched && isNotFound == false && isSearching == false) &&
-                <div className=" main w-3/4 h-screen bg-[#652c7e] p-4 flex flex-col justify-between">
+                <div className={`main flex-1 bg-[#652c7e] p-4 flex flex-col justify-between`}>
                     <div style={{ backgroundImage: `url(./img/${todayHeaderImage}.png)` }} className="today-summary-header bg-white px-10 py-5 rounded-md flex flex-col justify-between md:h-full">
                         <div className="flex-icon">
                             <img src={icon} />

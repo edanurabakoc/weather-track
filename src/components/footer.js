@@ -6,8 +6,8 @@ import '../index.css';
 function Footer() {
     return (
         <div className="footer bg-[#9467a196] w-full absolute bottom-0">
-            <div className="container mx-auto flex justify-between items-center text-white max-sm:flex max-sm:flex-row max-sm:h-auto max-sm:place-content-center max-sm:gap-20">
-                <div className="social-media-icons flex flex-row">
+            <div className="container mx-auto p-2 flex justify-between items-center text-white max-sm:flex max-sm:flex-row max-sm:h-auto max-sm:place-content-center max-sm:gap-20">
+                <div className="social-media-icons flex flex-row ml-2">
                     <div className='text-black'>
                         <a href="https://github.com/edanurabakoc" target="_blank" className="mr-4">
                             <FontAwesomeIcon icon={faGithub} />

@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 function useWeather() {
 
     const menuCities = [
-        'Ankara', 'Toronto',
-      ]
+        'Ankara', 'Toronto','Van'
+    ]
 
     const [city, setCity] = useState('');
     const [deg, setDeg] = useState(0);
@@ -28,6 +28,7 @@ function useWeather() {
     const [description, setDescription] = useState();
     const [isSearching, setIsSearching] = useState(false);
     const [lastSearchedCities, setlastSearchedCities] = useState([]);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     function getDayOfWeek(dateString) {
         var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -69,7 +70,6 @@ function useWeather() {
             }
             return prevCities;
         });
-
 
         setIsSearching(true);
 
@@ -187,7 +187,8 @@ function useWeather() {
         fahrenhayt,
         deg,
         uvIndex,
-        menuCities
+        menuCities,
+        isSidebarOpen
     },
     {
         setCity,
@@ -214,7 +215,8 @@ function useWeather() {
         setIcon,
         setDeg,
         formatDate,
-        getDayOfWeek 
+        getDayOfWeek,
+        setIsSidebarOpen
     },
     ];
 }

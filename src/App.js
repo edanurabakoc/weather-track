@@ -10,6 +10,8 @@ function App() {
   return (
     <div className="flex bg-gray-100">
       <Sidebar
+        isSidebarOpen={states.isSidebarOpen}
+        setIsSidebarOpen={functions.setIsSidebarOpen}
         setCity={functions.setCity}
         search={functions.search}
         city={states.city}
@@ -19,20 +21,22 @@ function App() {
         lastSearchedCities={states.lastSearchedCities} />
 
       {(states.isSearched == false && states.isSearching == false) &&
-        <div className='w-[75%] flex justify-center bg-white flex flex-col items-center'>
-          <img className='h-[50%] self-center' src='search-bg.gif' />
+        <div className='flex-1 flex justify-center bg-white flex flex-col items-center'>
+          <img className='max-h-[50%] self-center' src='search-bg.gif' />
           <h1>Search for a place...</h1>
         </div>
       }
       {
         (states.isNotFound === true || states.isSearching === true) &&
-        <div className='w-[75%] flex justify-center bg-white flex flex-col items-center'>
-          <img className='h-[50%] self-center' src='not-found.gif' />
+        <div className='flex-1  flex justify-center bg-white flex flex-col items-center'>
+          <img className='max-h-[50%] self-center' src='not-found.gif' />
           <h1>{states.isNotFound ? "Not found!" : "Searching..."}</h1>
         </div>
       }
 
       <Today
+        isSidebarOpen={states.isSidebarOpen}
+        setIsSidebarOpen={functions.setIsSidebarOpen}
         isActiveCategory={states.isActiveCategory}
         isSearched={states.isSearched}
         isNotFound={states.isNotFound}
